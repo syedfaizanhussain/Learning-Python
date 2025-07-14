@@ -1,15 +1,15 @@
 #strings are immutable
 a="FAIZAN"
-# print(a)
-# print(type(a))
-# # as you see this is string 
-# # string slicing
-# print(len(a)) #knowing length of a stirng 
-# print(a[1:5]) #indexing [ind_start : ind_end]
+print(a)
+print(type(a))
+# as you see this is string 
+# string slicing
+print(len(a)) #knowing length of a stirng 
+print(a[1:5]) #indexing [ind_start : ind_end]
 b="hey iam Fyzan"
-# print(len(b))
-# print(b[1:10:2]) #slicing with skip values[start:end:skipvalues] 
-# print(a[-5]) #negative slicing
+print(len(b))
+print(b[1:10:2]) #slicing with skip values[start:end:skipvalues] 
+print(a[-5]) #negative slicing
 
 
 #string methods
