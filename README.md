@@ -37,7 +37,51 @@ I’m learning Python in a structured and consistent way. Here's what I'm workin
 - Web Development with Flask
 - Data Science & AI Tools (NumPy, Pandas, etc.)
 
+### 🔁 Daily Commit Strategy
+
+I am committing code every day (or regularly) to:
+- ✅ Stay consistent
+- 💡 Practice problem-solving
+- 📈 Track visible progress
+
+> Feel free to explore the history and see how my skills evolve over time!
+
 ---
+
+## 🧠 Learning Resources
+
+I’m learning from a mix of:
+- 📺 YouTube tutorials
+- 📖 Free online courses
+- 🧵 Threads, blogs, and docs
+- 💬 Help from ChatGPT, forums, and mentors
+
+---
+
+## 📌 Goals
+
+- Build a strong foundation in Python
+- Get internship/job-ready within the next 6–12 months
+- Transition into AI/ML development and explore backend projects
+- Inspire and help others who are also starting from zero
+
+---
+
+## 🤝 Let’s Connect
+
+If you’re also learning Python, feel free to:
+- 👀 Fork this repo and start your own journey
+- 💬 Suggest problems to solve
+- 🤝 Collaborate on beginner-friendly projects
+
+---
+
+### 🔥 Consistency > Perfection
+
+Thanks for visiting — keep pushing, keep learning. Let’s become Python pros together! 🐍💪
+
+
+
 
 
 
