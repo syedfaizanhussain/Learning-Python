@@ -136,3 +136,75 @@ for i in range(1,a+1):
 rev=int(input("Enter number : "))
 for i in range(10,0,-1):
     print(f"{rev} * {i} = {rev * i}")
+
+
+#13.
+'''
+wap to print the following star pattern.
+  *
+ **
+***
+'''
+r=3
+for i in range(1,r+1):
+        print(" "*(r-i),end="")
+        print("*"*i,end="")
+        print("")
+
+
+#14.
+'''
+Inverted Pyramid
+
+*******
+ *****
+  ***
+   *
+'''
+ip=6
+for i in range(ip,0,-1):
+    print(" " * (ip-i),end="")
+    print("*" *(2*i-1),end="")
+    print("")
+
+#15.
+'''
+Diamond pattern
+   *
+  ***
+ *****
+*******
+*******
+ *****
+  ***
+   *
+ '''
+d=3
+#upperpart.
+for i in range(1,d+1):
+    print(" "*(d-i),end="") #first pyramid. 
+    print("*" * (2*i-1))
+#lowerpart.
+for i in range(d,0,-1):
+    print(" "* (d-i),end="") #reverse pyramid.
+    print("*" * (2*i-1),end="")
+    print("")
+
+
+#16.
+'''
+Half Diamond
+*
+**
+***
+***
+**
+*
+'''
+hd=3
+#upper
+for i in range(1,hd+1):  #right triangle
+    print("*" * i)
+#lower
+for i in range(hd,0,-1):  # reverse right triangle
+    print("*" * i)
