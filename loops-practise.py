@@ -64,6 +64,7 @@ print(r)
 
 #7. STAR printing.
 '''
+wap to print the following star pattern.
   *
  ***
 *****  
@@ -74,4 +75,64 @@ for i in range(1,n+1):
     print(" " * (n-i),end="")
     print("*" * (2*i-1),end="")
     print(" ")
-    
+
+#8.
+'''
+wap to print the following star pattern.
+***
+***
+***
+'''
+w=3
+for i in range(1,w+1):
+    print("*"*3,end="")
+    print(" ")
+
+#9.
+'''
+wap to print the following star pattern.
+*
+**
+*** m=3
+'''
+m=int(input("Enter number: "))
+for i in range(1,m+1):
+    print("*" * i,end="")
+    print("")
+
+
+#10.
+'''
+wap to print the following star pattern.
+***
+**
+* m=3
+'''
+m=int(input("Enter number: "))
+for i in range(m,0,-1):
+    print("*" * i,end="" )
+    print("")
+
+
+##11.
+'''
+wap to print the following star pattern.
+***
+* *
+***
+'''
+a=int(input("Enter number : "))
+for i in range(1,a+1):
+    if(i==1 or i==a):
+        print("*" * a)
+    else:
+        print("*",end="")
+        print(" " *(a-2),end="")
+        print("*",end="")
+        print("")
+
+
+#12.1.wap to print multiplication table of given no. in reverse! using for loops
+rev=int(input("Enter number : "))
+for i in range(10,0,-1):
+    print(f"{rev} * {i} = {rev * i}")
