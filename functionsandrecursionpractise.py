@@ -47,3 +47,41 @@ print(f"The sum of {a} is {sum(a)}")
 
 
 
+
+
+#5.
+'''
+wap function to print first n lines of follwing patterns
+***
+**
+*
+using recursionn 
+'''
+def stars(n):
+    if n==0:
+        return
+    print("*" * n) #5stars wil print
+    stars(n-1)  #here the  n=5-1 value assign so it go back and print 4 stars llike this to 1star after 1star we need base case.
+n=int(input("Enter Number : "))
+stars(n)
+
+
+
+
+#6. wap to converts inches to cms 
+#formula = 1 inches = 1 x 2.54 cms
+def inchetocm(i):
+    return i * 2.54
+i=float(input("Enter Inches To Converts It to Centimeter : "))
+print(f"The Inches {i} is {inchetocm(i)} centimeters")
+
+
+
+
+#7.wap to print multipliation of a number 
+def mul(n):
+    result=1
+    for i in range(1,11):
+        print(f"{n} x {i} = {n * i}")
+n=int(input("Enter number : "))
+print(mul(n))
