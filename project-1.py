@@ -5,6 +5,12 @@ Snake , Gun and Water ! :
             Snake beats Water (snake drinks the water), Water beats Gun (water drowns the gun), and Gun beats Snake (gun shoots the snake). 
             Players simultaneously choose one of the three options. The winner is determined by comparing the choices according to these rules.
 
+According to the game rules:
+
+(1)Snake drinks water → Snake wins.
+(2)Water drowns gun → Water wins.
+(3)Gun shoots snake → Gun wins.
+
 
 
 '''
@@ -14,17 +20,17 @@ def choice(user="",computer=""):
         print(f"THE Match is Draw! Because user :{user} and computer: {computer} choose same !")
     else:
         if user == 1 and computer == 2:   #1-snake , 2-water , 3-gun
-            print("USER WIN!")
+            print("USER WIN! (Snake drinks water → Snake wins).")
         elif user ==1 and computer ==3:
-            print("COMPUTER WIN!")
+            print("COMPUTER WIN! (Gun shoots snake → Gun wins).")
         elif user == 2 and computer == 3:
-            print("USER WIN!")
+            print("USER WIN! (Water drowns gun → Water wins).")
         elif user ==2 and computer ==1:
-            print("COMPUTER WIN!")
+            print("COMPUTER WIN! (Snake drinks water → Snake wins).")
         elif user == 3 and computer == 1:
-            print("USER WIN!")
+            print("USER WIN! (Gun shoots snake → Gun wins).")
         elif user ==3 and computer ==2:
-            print("COMPUTER WIN!")
+            print("COMPUTER WIN! (Water drowns gun → Water wins).")
         else:
             print("Somethings is wrong!")
         
