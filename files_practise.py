@@ -74,3 +74,68 @@ for word in words:
     content=content.replace(word,"#"* len(word))
 with open("file.txt","w") as f:
     f.write(content)
+
+#6. wap to mine a log file and find out whether it contains "python"
+with open("log.txt","r") as f:
+    content = f.read()
+
+if ("python" in content):
+    print("Python Word exists !")
+else:
+    print("Python Word  not exists !")
+#7. wap to find out the line number where python is present from ques 6..
+with open("log.txt","r") as f1:
+    lines=f1.readlines()
+lineno=1
+for line in lines:
+    if("python" in line):
+        print(f"Python Word Exists! line no : {lineno}")
+        break
+    lineno +=1
+else:
+    print("No python Word Exists!")
+
+
+#8.wap to make a copy of a text file"this.txt
+with open("this.txt") as cop:
+    content=cop.read()
+
+with open("this_copy.txt","w") as cop:
+    cop.write(content)
+
+
+#9.wap to find out whether a file is identical & matches the content of another file!
+
+with open("this.txt") as f3:
+    content = f3.read()
+
+with open("log.txt") as f3:
+    content2= f3.read()
+
+if(content == content2):
+    print("Same!")
+else:
+    print("not same Content !")
+
+
+#10. wap to wipeout the content of a file using python
+
+
+with open("wiped.txt","w") as w:
+    w.write("")
+
+
+
+#11. wap to rename a file to "renamed_by_python.txt"
+with open("renamefile.txt","r") as f5:
+    content = f5.read()
+
+with open("rename_by_python.txt","w") as f5:
+    f5.write(content)  #we need to install os module to do this but as now we just created another file by 'rename_by_python.txt' name and copies the content from 'renamefile.txt' 
+'''
+import os
+
+# Rename a file from old name to new name
+os.rename("old_file.txt", "new_file.txt")
+
+'''
