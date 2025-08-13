@@ -87,36 +87,39 @@ a.squareroot()
 
 
 #5. write a class train which has methods to book a ticket.get status (no of seats) and get fare information of train running under indian railways
+from random import randint
+
 class Train:
-    def __init__(self, name, seats, fare):
-        self.name = name
-        self.seats = seats
-        self.fare = fare
-        print(f"Train '{self.name}' initialized with {self.seats} seats at ₹{self.fare} per ticket.")
-    
-    def book_ticket(self, tickets):
-        if tickets <= 0:
-            print("Please enter a valid number of tickets to book.")
-        elif tickets > self.seats:
-            print(f"Only {self.seats} seat(s) available. Cannot book {tickets} ticket(s).")
+    def __init__(self, trainNo):
+        self.trainNo = trainNo
+        self.fro = None   # Initialize start station attribute
+        self.to = None    # Initialize destination station attribute
+        self.seats = 10   # Example total seats available
+
+    def bookticket(self, fro, to):
+        if self.seats > 0:
+            self.fro = fro
+            self.to = to
+            self.seats -= 1
+            print(f"Ticket booked in train no: {self.trainNo} from {fro} to {to}.")
+            print(f"Seats remaining: {self.seats}")
         else:
-            self.seats -= tickets
-            total_cost = tickets * self.fare
-            print(f"{tickets} ticket(s) booked successfully! Total cost: ₹{total_cost}")
-    
-    def get_status(self):
-        print(f"Seats available: {self.seats}")
-    
-    def get_fare_info(self):
-        print(f"Fare per ticket: ₹{self.fare}")
+            print("Sorry, no seats available.")
 
+    def status(self):
+        if self.fro and self.to:
+            print(f"Train no: {self.trainNo} is booked from {self.fro} to {self.to}.")
+            print(f"Seats available: {self.seats}")
+        else:
+            print(f"No tickets booked yet on train no: {self.trainNo}.")
 
-# Example Usage
-train1 = Train("Rajdhani Express", 50, 1500)
-train1.get_status()
-train1.get_fare_info()
-train1.book_ticket(3)
-train1.get_status()
-train1.book_ticket(48)
-train1.get_status()
-train1.book_ticket(1)  # This should now fail (no seats left)
+    def fare(self, fro, to):
+        # Random fare between 34 and 2344 for demonstration
+        fare_amount = randint(34, 2344)
+        print(f"Ticket fare in train no: {self.trainNo} from {fro} to {to} is ₹{fare_amount}.")
+
+# Testing the class
+a = Train(123)
+a.bookticket("Mumbai", "Goa")
+a.status()
+a.fare("Mumbai", "Goa")
